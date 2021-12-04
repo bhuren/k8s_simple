@@ -1,0 +1,8 @@
+---
+# tasks file for roles/docker_k8s_all
+- name: Disable Unattended Upgrades 
+  import_tasks: tasks/disable_unattended_upgrades.yml
+- name: Installing docker
+  import_tasks: tasks/install_docker.yml
+- name: Installing Kubernetes
+  import_tasks: tasks/kube_apt.yml

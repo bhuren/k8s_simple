@@ -1,0 +1,6 @@
+---
+ - hosts: master
+   become: yes
+   roles:
+   - docker_k8s_all
+   - k8s_master

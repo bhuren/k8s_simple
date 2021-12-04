@@ -1,0 +1,5 @@
+---
+- name: Replacing config file /etc/apt/apt.conf.d/20auto-upgrades with new version
+  copy: 
+    src: files/disable_unattended_upgrades
+    dest: /etc/apt/apt.conf.d/20auto-upgrades

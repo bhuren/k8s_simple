@@ -1,0 +1,6 @@
+---
+# tasks file for roles/k8s_worker
+- name: Joining the cluster
+  import_tasks: tasks/kube_cluster_join.yml
+- name: Applying Workarund for Weave CNI
+  import_tasks: tasks/workaround_for_CNI_virtualbox.yml

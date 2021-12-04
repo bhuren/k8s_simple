@@ -1,0 +1,4 @@
+---
+# tasks file for k8s_master
+- name: Initializing the cluster on master node
+  import_tasks: tasks/kube_cluster_init.yml
