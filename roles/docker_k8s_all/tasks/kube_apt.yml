@@ -29,4 +29,4 @@
 - name: adding kubcectl shortcuts and completion
   ansible.builtin.lineinfile:
     path: ~/.bashrc
-    line: "source <(kubectl completion bash)\nalias k=kubectl\ncomplete -F __start_kubectl k"
+    line: "source <(kubectl completion bash)\nalias k=kubectl\ncomplete -F __start_kubectl k\nalias xCNI='iptables -t nat -I KUBE-SERVICES -d 10.96.0.1/32 -p tcp -m comment --comment "default/kubernetes:https cluster IP" -m tcp --dport 443 -j KUBE-MARK-MASQ'"
