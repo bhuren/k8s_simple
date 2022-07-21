@@ -12,7 +12,7 @@ k2
 [all:vars]
 ansible_user=K   # Ansible User name
 ansible_become=yes  # Assumes ansible user has sudp priviliges
-addr=192.168.99.200 #  Variable for Cluster IP [Master node] address to be advertised during cluster formation
+addr=192.168.99.200 #  Variable for Cluster IP [Master node IP] address to be advertised during cluster formation
 master_hostname=k0 # Assumes DNS Entries for k0, k1, k2 are already added in control machine /etc/hosts file with their respective IPs.
 
 
